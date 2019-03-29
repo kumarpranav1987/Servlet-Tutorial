@@ -14,12 +14,12 @@ public class LoadOnStart extends HttpServlet{
 
 	@Override
 	public void init() throws ServletException {
-		System.out.println("Init Called");
+		System.out.println("LoadOnStart Init Called");
 	}
 
 	
 	public LoadOnStart() {
-		System.out.println("Constructor Called");
+		System.out.println("LoadOnStart Constructor Called");
 	}
 
 
@@ -32,6 +32,6 @@ public class LoadOnStart extends HttpServlet{
 
 	@Override
 	public void destroy() {
-		System.out.println("Destroy Called");
+		System.out.println("LoadOnStart Destroy Called");
 	}
 }
