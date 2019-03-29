@@ -1,58 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	id="WebApp_ID" version="3.1">
-	<display-name>Servlet-Tutorial11</display-name>
-
-	<context-param>
-		<param-name>companyname</param-name>
-		<param-value>XYZ</param-value>
-	</context-param>
-
-
-	<servlet>
-		<servlet-name>XMLBasedServlet</servlet-name>
-		<servlet-class>com.servlet.xml.XMLBasedServlet</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>XMLBasedServlet</servlet-name>
-		<url-pattern>/XMLBasedServlet</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>LoadOnStart</servlet-name>
-		<servlet-class>com.servlet.loadonstart.LoadOnStart</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>LoadOnStart</servlet-name>
-		<url-pattern>/LoadOnStart</url-pattern>
-	</servlet-mapping>
-
-
-	<servlet>
-		<servlet-name>ServletConfigExample</servlet-name>
-		<servlet-class>com.servlet.servletconfig.ServletConfigExample</servlet-class>
-		<init-param>
-			<param-name>coursename</param-name>
-			<param-value>Java Servlet</param-value>
-		</init-param>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletConfigExample</servlet-name>
-		<url-pattern>/ServletConfigExample</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-	<servlet-name>ServletContextExample</servlet-name>
-	<servlet-class>com.servlet.servletcontext.ServletContextExample</servlet-class>
-	</servlet>
-	<servlet-mapping>
-	<servlet-name>ServletContextExample</servlet-name>
-	<url-pattern>/ServletContextExample</url-pattern>
-	</servlet-mapping>
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Servlet-Tutorial11</display-name>
+  <context-param>
+    <param-name>companyname</param-name>
+    <param-value>XYZ</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>XMLBasedServlet</servlet-name>
+    <servlet-class>com.servlet.xml.XMLBasedServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>XMLBasedServlet</servlet-name>
+    <url-pattern>/XMLBasedServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoadOnStart</servlet-name>
+    <servlet-class>com.servlet.loadonstart.LoadOnStart</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadOnStart</servlet-name>
+    <url-pattern>/LoadOnStart</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletConfigExample</servlet-name>
+    <servlet-class>com.servlet.servletconfig.ServletConfigExample</servlet-class>
+    <init-param>
+      <param-name>coursename</param-name>
+      <param-value>Java Servlet</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletConfigExample</servlet-name>
+    <url-pattern>/ServletConfigExample</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletContextExample</servlet-name>
+    <servlet-class>com.servlet.servletcontext.ServletContextExample</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContextExample</servlet-name>
+    <url-pattern>/ServletContextExample</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 </web-app>
