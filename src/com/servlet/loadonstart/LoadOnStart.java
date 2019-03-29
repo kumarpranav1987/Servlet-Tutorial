@@ -19,7 +19,6 @@ public class LoadOnStart extends HttpServlet{
 
 	
 	public LoadOnStart() {
-		super();
 		System.out.println("Constructor Called");
 	}
 
