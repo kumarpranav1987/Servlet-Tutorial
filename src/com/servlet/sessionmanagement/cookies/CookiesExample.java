@@ -1,4 +1,4 @@
-package com.servlet.sessionmanagement;
+package com.servlet.sessionmanagement.cookies;
 
 import java.io.IOException;
 import java.io.PrintWriter;
