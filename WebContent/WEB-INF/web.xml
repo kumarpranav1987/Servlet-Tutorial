@@ -5,6 +5,16 @@
     <param-name>companyname</param-name>
     <param-value>XYZ</param-value>
   </context-param>
+  
+  <filter>
+  	<filter-name>PerformanceFilter</filter-name>
+  	<filter-class>com.servlet.filter.PerformanceFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+ 	 <filter-name>PerformanceFilter</filter-name>
+ 	 <url-pattern>/FilterExampleServlet</url-pattern>
+  </filter-mapping>
   <servlet>
     <servlet-name>XMLBasedServlet</servlet-name>
     <servlet-class>com.servlet.xml.XMLBasedServlet</servlet-class>
