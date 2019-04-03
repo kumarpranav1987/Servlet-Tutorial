@@ -18,16 +18,14 @@ public class CookiesExample extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("text/html");
 		String name = request.getParameter("username");
-		Cookie cookie = new Cookie("myname", name);
+		Cookie cookie = new Cookie("username", name);
 		response.addCookie(cookie);
 		
 		PrintWriter out = response.getWriter();
-		out.append("Hello " + name);
+		out.append("Welcome " + name);
 		
-		out.append("<form action=\"OtherServlet\">");
-		out.append("<input type=\"submit\" value=\"Go to OtherServlet\">");
-		out.append("</form>");
-		
+		out.append("<br>");
+		out.append("<a href='OtherServlet'> Go To OtherServlet Servlet </a>");
 	}
 
 }

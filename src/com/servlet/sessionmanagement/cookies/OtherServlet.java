@@ -20,8 +20,8 @@ public class OtherServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		if (cookies != null) {
 			for (Cookie c : cookies) {
-				if (c.getName().equals("myname")) {
-					out.append("Your name is " + c.getValue());
+				if (c.getName().equals("username")) {
+					out.append("Welcome " + c.getValue());
 				}
 			}
 		}
